@@ -1,0 +1,33 @@
+---
+title: "Ejercicio 1"
+output: html_document
+author: "T. Riddle, H. Potter, A. Dumbledore"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## *Ejemplo de documento R markdown*
+
+El **atajo** para el *chunk* es Ctrl + Alt + I
+
+```{r database, include=FALSE}
+data <- cars
+```
+
+## Plot
+
+```{r plot1}
+plot(data$speed,data$dist)
+reg<-lm(dist ~ speed, data = cars)
+abline(reg)
+```
+
+#### Código en línea
+
+La media de *speed* es `r mean(data$speed)`. La media de *dist* es `r mean(data$dist)`
+
+1.  El crusaíto
+
+2.  El robocop
