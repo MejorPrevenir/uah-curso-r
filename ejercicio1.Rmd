@@ -1,7 +1,7 @@
 ---
 title: "Ejercicio 1"
 output: html_document
-author: "T. Riddle, H. Potter, A. Dumbledore"
+author: "T. Riddle, H. Potter, A. Dumbledore, H.Granger"
 ---
 
 ```{r setup, include=FALSE}
@@ -21,7 +21,7 @@ data <- cars
 ```{r plot1}
 plot(data$speed,data$dist)
 reg<-lm(dist ~ speed, data = cars)
-abline(reg)
+abline(reg, col="blue")
 ```
 
 #### Código en línea
